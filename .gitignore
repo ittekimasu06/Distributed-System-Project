@@ -1,0 +1,44 @@
+# Environment files
+.env
+
+# Go-specific ignores
+/bin/
+/vendor/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+go.sum
+
+# Python-specific ignores
+/venv/
+/__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Build and test artifacts
+/coverage.out
+/test-report.xml
+*.test
+*.prof
