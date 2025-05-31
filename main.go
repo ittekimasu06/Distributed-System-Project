@@ -145,12 +145,7 @@ func main() {
 				log.Printf("Error refreshing CSV: %v", err)
 			} else {
 				log.Printf("Refreshed %s with latest data", csvFilePath)
-				if csvContent, err := os.ReadFile(csvFilePath); err == nil {
-					lines := strings.Split(string(csvContent), "\n")
-					if len(lines) > 0 {
-						log.Printf("CSV header: %s", lines[0])
-					}
-				}
+				
 			}
 		}
 
